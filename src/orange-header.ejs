@@ -1,21 +1,30 @@
 <header class="header">
   <nav class="header__navigation">
     <ul>
-      <li>design</li>
-      <li>projects</li>
-      <li>about me</li>
-      <li>contact</li>
+      <li>
+        <%- htmlWebpackPlugin.options.variables.nav_link_1 %>
+      </li>
+      <li>
+        <%- htmlWebpackPlugin.options.variables.nav_link_2 %>
+      </li>
+      <li>
+        <%- htmlWebpackPlugin.options.variables.nav_link_3 %>
+      </li>
+      <li>
+        <%- htmlWebpackPlugin.options.variables.nav_link_4 %>
+      </li>
     </ul>
   </nav>
   <div class="container header__container">
     <div class="row">
       <div class="col-12">
         <h1 class="header__title">
-          creative soul
+          <%- htmlWebpackPlugin.options.variables.header_title %>
         </h1>
         <div class="header__subtitle">
-          <p>meet me and my works</p>
-          <p>designer & content strategist from Warsaw</p>
+          <p>
+            <%- htmlWebpackPlugin.options.variables.header_subtitle %>
+          </p>
         </div>
       </div>
     </div>

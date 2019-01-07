@@ -1,3 +1,13 @@
 <footer class="footer">
-  <p>codenovember challenge organised by The Awwwesomes Warsaw, 2018</p>
+  <p>
+    <%- htmlWebpackPlugin.options.variables.footer_content %>
+    <span class="footer__text--highlightes">
+      <%- htmlWebpackPlugin.options.variables.footer_organizer %></span>
+  </p>
+  <p class="footer__text--highlightes">
+    <%- htmlWebpackPlugin.options.variables.footer_credit %>
+  </p>
+  <p>
+    <%- htmlWebpackPlugin.options.variables.footer_data %>
+  </p>
 </footer>
