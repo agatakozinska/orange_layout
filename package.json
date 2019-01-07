@@ -1,0 +1,19 @@
+{
+  "name": "pathfinder-product-pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "poi",
+    "build": "poi build"
+  },
+  "devDependencies": {
+    "poi": "^10.2.9"
+  },
+  "dependencies": {
+    "bootstrap-4-grid": "^2.4.1",
+    "ejs-compiled-loader": "^1.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+@import "node_modules/bootstrap-4-grid/scss/grid";
+@import "./src/fonts.scss";
+@import "./src/variables.scss";
+// import "@/modules/pf-module-keyvisual/pf-keyvisual.scss"; -js
+
+body {
+  font-family: 'SpaceMono';
+  font-weight: 400;
+  font-size: $font-size-xs;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hello {
+  color: $orange;
+}
