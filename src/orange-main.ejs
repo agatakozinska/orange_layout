@@ -1,34 +1,34 @@
 <section class="intro">
   <div class="container">
     <div class="row">
-      <div class="col-6">
-        <div class="col-12">
+      <div class="col-12 col-md-6">
+        <div class="intro__content-wrapper">
           <h2 class="section__title">
             <%- htmlWebpackPlugin.options.variables.intro_title %>
           </h2>
-          <div class="intro-content__text">
+          <p class="intro__text">
             <%- htmlWebpackPlugin.options.variables.intro_text %>
-          </div>
+          </p>
         </div>
-        <div class="col-12">
+        <div class="skills__content-wrapper">
           <h2 class="section__title">
             <%- htmlWebpackPlugin.options.variables.skills_title %>
           </h2>
-          <div class="intro-skills__text">
-            <ul>
-              <li>
+          <div class="skills__text">
+            <ul class="skills__list">
+              <li class="skills__list__item">
                 <%- htmlWebpackPlugin.options.variables.skill_1 %>
               </li>
-              <li>
+              <li class="skills__list__item">
                 <%- htmlWebpackPlugin.options.variables.skill_2 %>
               </li>
-              <li>
+              <li class="skills__list__item">
                 <%- htmlWebpackPlugin.options.variables.skill_3 %>
               </li>
-              <li>
+              <li class="skills__list__item">
                 <%- htmlWebpackPlugin.options.variables.skill_4 %>
               </li>
-              <li>
+              <li class="skills__list__item">
                 <%- htmlWebpackPlugin.options.variables.skill_5 %>
               </li>
             </ul>
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="col-5 offset-1">
+      <div class="intro__image-wrapper col-sm-5 offset-sm-1">
         <figure>
           <img class="intro__image" src="img/author.jpg" alt="" />
           <figcaption>
@@ -56,29 +56,33 @@
         <h2 class="section__title">
           <%- htmlWebpackPlugin.options.variables.project_title %>
         </h2>
-        <p>
+        <p class="project__text"><%- htmlWebpackPlugin.options.variables.project_content %>
         </p>
       </div>
-      <div class="col-12 col-md-4">
-        <img class="project__image" src="img/vintage-house.jpg" alt="">
-        <h3 class="project__heading">
-          <%- htmlWebpackPlugin.options.variables.project_photo_heading_1 %>
-        </h3>
-        <p class="project__describtion">
-          <%- htmlWebpackPlugin.options.variables.project_content %>
-        </p>
+      <div class="project__wrapper col-12 col-md-4">
+        <img class="col-sm-6 col-md-12 project__image" src="img/vintage-house.jpg" alt="">
+        <div class="col-sm-6 col-md-12 project__content">
+          <h3 class="project__heading project_heading--rotated">
+            <%- htmlWebpackPlugin.options.variables.project_photo_heading_1 %>
+          </h3>
+          <p class="project__describtion">
+            <%- htmlWebpackPlugin.options.variables.project_content %>
+          </p>
+        </div>
+      </div>
+      <div class="project__wrapper col-12 col-md-4">
+        <img class="col-sm-6 col-md-12 project__image" src="img/colors-of-interior.jpg" alt="">
+        <div class="col-sm-6 col-md-12 project__content">
+          <h3 class="project__heading project_heading--rotated">
+            <%- htmlWebpackPlugin.options.variables.project_photo_heading_2 %>
+          </h3>
+          <p class="project__describtion">
+            <%- htmlWebpackPlugin.options.variables.project_content %>
+          </p>
+        </div>
       </div>
       <div class="col-12 col-md-4">
-        <img class="project__image" src="img/colors-of-interior.jpg" alt="">
-        <h3 class="project__heading">
-          <%- htmlWebpackPlugin.options.variables.project_photo_heading_2 %>
-        </h3>
-        <p class="project__describtion">
-          <%- htmlWebpackPlugin.options.variables.project_content %>
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="col-12">
+        <div class="project__content">
           <h3 class="project__heading">
             <%- htmlWebpackPlugin.options.variables.project_heading_1 %>
           </h3>
@@ -86,7 +90,7 @@
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
-        <div class="col-12">
+        <div class="project__content">
           <h3 class="project__heading">
             <%- htmlWebpackPlugin.options.variables.project_heading_2 %>
           </h3>
@@ -94,7 +98,7 @@
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
-        <div class="col-12">
+        <div class="project__content">
           <h3 class="project__heading">
             <%- htmlWebpackPlugin.options.variables.project_heading_3 %>
           </h3>
@@ -115,19 +119,21 @@
             <%- htmlWebpackPlugin.options.variables.aboutme_title_highlighed %></span>
         </h2>
       </div>
-      <div class="col-6 col-md-3">
-        <img src="img/instagram1.jpg" alt="">
+      <div class="col-12 aboutme__images">
+        <div class="col-6 col-md-3">
+          <img src="img/instagram1.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/instagram2.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/instagram3.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/instagram4.jpg" alt="">
+        </div>
       </div>
-      <div class="col-6 col-md-3">
-        <img src="img/instagram2.jpg" alt="">
-      </div>
-      <div class="col-6 col-md-3">
-        <img src="img/instagram3.jpg" alt="">
-      </div>
-      <div class="col-6 col-md-3">
-        <img src="img/instagram4.jpg" alt="">
-      </div>
-      <p class="section__note">
+      <p class="section__note section__note--indented">
         <%- htmlWebpackPlugin.options.variables.aboutme_note %>
       </p>
     </div>
@@ -140,6 +146,7 @@
         <h2 class="section__title section__title--bigger">
           <%- htmlWebpackPlugin.options.variables.contact_title %>
         </h2>
+        <p><%- htmlWebpackPlugin.options.variables.contact_text %></p>
       </div>
     </div>
   </div>

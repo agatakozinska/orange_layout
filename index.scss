@@ -21,9 +21,13 @@ body {
   font-weight: 400;
   font-size: $font-size-xs;
   color: $black;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 img {
   max-width: 100%;
+}
+
+.row {
+  position: relative;
 }
