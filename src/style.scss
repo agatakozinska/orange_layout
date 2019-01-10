@@ -130,6 +130,7 @@
   font-size: 15px;
   color: $orange;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .aboutme__note {
@@ -168,6 +169,19 @@
     bottom: -5px;
     right: 0;
     max-width: 200px;
+  }
+
+  .intro__image {
+    position: relative;
+
+    &::before {
+      content: url(./img/cross.svg);
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      left: -45px;
+      width: 50%;
+    }
   }
 
   .project_heading--rotated {
@@ -214,18 +228,14 @@
     background-size: 100%;
   }
 
-  .header__navigation {
-    min-width: 500px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
   .navigation__list {
+    height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 100%;
     align-items: center;
+    margin: 0 auto;
   }
 
   .header__title {
@@ -251,6 +261,25 @@
   .header__navigation {
     height: 10vh;
   }
+
+  @keyframes move-down { 
+    0%   { transform: translateY(-100px); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+
+  .header__navigation.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: darken($vivid-orange, 2%);
+    z-index: 9999;
+    animation: move-down .2s forwards;
+  }
+
+
   
   .header__container {
     height: 70vh;
@@ -284,12 +313,7 @@
     top: 35%;
 
     &::before {
-      content: url(./img/cross.svg);
-      position: absolute;
-      z-index: -1;
-      top: -40px;
       left: -70px;
-      width: 50%;
     }
   }
 
@@ -318,6 +342,10 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .intro__wrapper-strategy > .section__title {
+    max-width: 350px;
+  }
+
   .intro__wrapper__image {
     max-width: 435px;
   }

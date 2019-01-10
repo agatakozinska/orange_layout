@@ -5,7 +5,7 @@ let variables = {
   nav_link_4: 'contact',
   header_title: 'creative soul',
   header_subtitle: 'meet me and my works<br>designer & content strategist from Warsaw',
-  intro_title: 'content & design strategy',
+  intro_title: 'content &&nbsp;design&nbsp;strategy',
   intro_text: 'Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog. Meggings cloud bread cray, 3 wolf moon before they sold out literally normcore retro ennui fam umami letterpress actually distillery vinyl. Wayfarers slow-carb umami VHS. Unicorn activated charcoal fanny pack tbh subway tile knausgaard PBR&B.',
   skills_title: 'the skillset',
   skill_1: 'design',
