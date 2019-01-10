@@ -1,16 +1,16 @@
 <section class="intro">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="intro__content-wrapper">
+      <div class="intro__wrapper col-12 col-md-6">
+        <div class="intro__wrapper-strategy">
           <h2 class="section__title">
             <%- htmlWebpackPlugin.options.variables.intro_title %>
           </h2>
-          <p class="intro__text">
+          <p class="strategy__text">
             <%- htmlWebpackPlugin.options.variables.intro_text %>
           </p>
         </div>
-        <div class="skills__content-wrapper">
+        <div class="intro__wrapper-skills">
           <h2 class="section__title">
             <%- htmlWebpackPlugin.options.variables.skills_title %>
           </h2>
@@ -32,15 +32,15 @@
                 <%- htmlWebpackPlugin.options.variables.skill_5 %>
               </li>
             </ul>
-            <p class="section__note">
+            <p class="section__note skills__note">
               <%- htmlWebpackPlugin.options.variables.skills_note %>
             </p>
           </div>
         </div>
       </div>
-      <div class="intro__image-wrapper col-sm-5 offset-sm-1">
-        <figure>
-          <img class="intro__image" src="img/author.jpg" alt="" />
+      <div class="intro__wrapper__image col-sm-5 offset-sm-1">
+        <figure class="intro__image">
+          <img src="img/author.jpg" alt="" />
           <figcaption>
             <%- htmlWebpackPlugin.options.variables.photo_caption %>
           </figcaption>
@@ -60,49 +60,49 @@
         </p>
       </div>
       <div class="project__wrapper col-12 col-md-4">
-        <img class="col-sm-6 col-md-12 project__image" src="img/vintage-house.jpg" alt="">
-        <div class="col-sm-6 col-md-12 project__content">
+        <img class="project__wrapper__image col-sm-6 col-md-12 " src="img/vintage-house.jpg" alt="">
+        <div class="col-sm-6 col-md-12 project__wrapper__content">
           <h3 class="project__heading project_heading--rotated">
             <%- htmlWebpackPlugin.options.variables.project_photo_heading_1 %>
           </h3>
-          <p class="project__describtion">
+          <p class="project__description">
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
       </div>
       <div class="project__wrapper col-12 col-md-4">
-        <img class="col-sm-6 col-md-12 project__image" src="img/colors-of-interior.jpg" alt="">
-        <div class="col-sm-6 col-md-12 project__content">
+        <img class="project__wrapper__image col-sm-6 col-md-12 " src="img/colors-of-interior.jpg" alt="">
+        <div class="col-sm-6 col-md-12 project__wrapper__content">
           <h3 class="project__heading project_heading--rotated">
             <%- htmlWebpackPlugin.options.variables.project_photo_heading_2 %>
           </h3>
-          <p class="project__describtion">
+          <p class="project__description">
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="project__content">
+      <div class="project__wrapper project__wrapper--block col-12 col-md-4">
+        <div class="project__wrapper__content">
           <h3 class="project__heading">
             <%- htmlWebpackPlugin.options.variables.project_heading_1 %>
           </h3>
-          <p class="project__describtion">
+          <p class="project__description">
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
-        <div class="project__content">
+        <div class="project__wrapper__content">
           <h3 class="project__heading">
             <%- htmlWebpackPlugin.options.variables.project_heading_2 %>
           </h3>
-          <p class="project__describtion">
+          <p class="project__description">
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
-        <div class="project__content">
+        <div class="project__wrapper__content">
           <h3 class="project__heading">
             <%- htmlWebpackPlugin.options.variables.project_heading_3 %>
           </h3>
-          <p class="project__describtion">
+          <p class="project__description">
             <%- htmlWebpackPlugin.options.variables.project_content %>
           </p>
         </div>
@@ -133,7 +133,7 @@
           <img src="img/instagram4.jpg" alt="">
         </div>
       </div>
-      <p class="section__note section__note--indented">
+      <p class="section__note aboutme__note">
         <%- htmlWebpackPlugin.options.variables.aboutme_note %>
       </p>
     </div>

@@ -29,6 +29,7 @@ let variables = {
   contact_text: 'write me at contact@theawwwesomes.org<br>or catch me on social media',
   footer_content: 'codenovember challenge organised by',
   footer_organizer: 'The Awwwesomes',
+  footer_coder: 'code by: Agata Kozińska, @agatakozinska',
   footer_credit: 'photos are taken from Unsplash',
   footer_data: 'Warsaw, 2018'
 }
