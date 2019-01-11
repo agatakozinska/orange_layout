@@ -1,19 +1,24 @@
 <header class="header">
-  <nav class="header__navigation">
+  <nav class="header__navigation header__navigation--visible">
+    <div class="hamburger__button">
+      <span class="hamburger__bar hamburger__bar--1"></span>
+      <span class="hamburger__bar hamburger__bar--2"></span>
+      <span class="hamburger__bar hamburger__bar--3"></span>
+    </div>
     <ul class="navigation__list">
-      <li><a href="#intro">
+      <li class="navigation__list__item" ><a href="#intro">
           <%- htmlWebpackPlugin.options.variables.nav_link_1 %>
         </a>
       </li>
-      <li><a href="#projects">
+      <li class="navigation__list__item"><a href="#projects">
           <%- htmlWebpackPlugin.options.variables.nav_link_2 %>
         </a>
       </li>
-      <li><a href="#about-me">
+      <li class="navigation__list__item"><a href="#about-me">
           <%- htmlWebpackPlugin.options.variables.nav_link_3 %>
         </a>
       </li>
-      <li><a href="#contact">
+      <li class="navigation__list__item"><a href="#contact">
           <%- htmlWebpackPlugin.options.variables.nav_link_4 %>
         </a>
       </li>
