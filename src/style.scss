@@ -38,15 +38,30 @@
 }
 
 .navigation__list {
-  // display: none;
+  display: none;
 }
 
 .header__navigation--visible {
   position: fixed;
   z-index: 9999;
   background-color: $white;
+  font-size: $font-size-sm;
   width: 100%;
   height: 100%;
+
+  .hamburger__bar {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger__bar--1 {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger__bar--2 {
+    opacity: 0;
+  }
+  .hamburger__bar--3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
 
   .navigation__list {
     position: relative;
@@ -64,17 +79,12 @@
     }
 
     &::before {
-      top: -30px;
+      top: -40px;
     }
 
     &::after{
-      bottom: -30px;
+      bottom: -40px;
     }
-  }
-
-  .navigation__list__item:hover {
-    color: darken($orange, 10%);
-    transition: all 1s ease-in-out;
   }
 }
 
@@ -308,16 +318,6 @@
     background-size: 100%;
   }
 
-  .navigation__list {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-  }
-
   .header__title {
     font-size: $font-size-lg*2;
   }
@@ -337,9 +337,13 @@
   .header {
     height: 80vh;
   }
-  
+
   .header__navigation {
     height: 8vh;
+  }
+
+  .header__container {
+    height: 72vh;
   }
 
   @keyframes move-down { 
@@ -359,6 +363,20 @@
     animation: move-down .3s forwards;
   }
 
+  .navigation__list {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hamburger__button {
+    display: none;
+  }
+
   .navigation__list__item:hover {
     color: $white;
     border-bottom: 1px solid $white;
@@ -366,10 +384,7 @@
     padding-bottom: 2px;
     transition: all 0.3s ease-out;
   }
-  
-  .header__container {
-    height: 72vh;
-  }
+
 
   .header__title {
     font-size: $font-size-xl;
@@ -428,6 +443,7 @@
 }
 
 @include media-breakpoint-up(lg) {
+
   .intro__wrapper-strategy > .section__title {
     max-width: 350px;
   }

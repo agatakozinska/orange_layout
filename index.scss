@@ -28,6 +28,9 @@ html, body {
 html {
   scroll-behavior: smooth;
 }
+html.no-scroll {
+  overflow-y: hidden;
+}
 
 body {
   font-family: 'SpaceMono';
