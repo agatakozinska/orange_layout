@@ -2,7 +2,7 @@ import "./index.scss";
 
 const nav = document.querySelector('.header__navigation');
 
-if (window.screen.width >= 768) {
+if (window.screen.width >= 992) {
   window.addEventListener('scroll', function() {
     const navHeight = nav.offsetHeight;
     const pageHeight = window.scrollY;
