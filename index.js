@@ -2,7 +2,7 @@ import "./index.scss";
 
 const nav = document.querySelector('.header__navigation');
 
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', () => {
     const navHeight = nav.offsetHeight;
     const pageHeight = window.scrollY;
 
@@ -16,18 +16,18 @@ const nav = document.querySelector('.header__navigation');
 const button = document.querySelector('.hamburger__button');
 const navVisible = 'header__navigation--visible';
 
-button.addEventListener('click', event => { 
-  nav.classList.toggle(navVisible);
-  stopScroll();
-});
-
-function stopScroll() {
+const stopScroll = () => {
   if (nav.classList.contains(navVisible)) {
     document.documentElement.classList.add("no-scroll");
   } else {
     document.documentElement.classList.remove("no-scroll");
   }
 }
+
+button.addEventListener('click', () => { 
+  nav.classList.toggle(navVisible);
+  stopScroll();
+});
 
 const links = document.querySelectorAll('.navigation__list__item');
 const linksArray = [...links];
