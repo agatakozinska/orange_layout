@@ -12,12 +12,9 @@ module.exports = {
     config.plugins.push(new webpack.ProvidePlugin({
 
     }));
-    // config.output.publicPath = './'
+    //to run build
+    // config.output.publicPath = './' 
 
-    // don't add sourcemaps in production build
-    if (process.env.NODE_ENV === 'production') {
-      delete config.devtool;
-    }
 
     return config // <-- Important, must return it
   },

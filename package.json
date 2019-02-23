@@ -1,7 +1,8 @@
 {
-  "name": "pathfinder-product-pages",
+  "name": "orange-layout",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "start": "poi",
